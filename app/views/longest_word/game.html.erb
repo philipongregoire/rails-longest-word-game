@@ -1,0 +1,15 @@
+<div class="text-center">
+  <h2>******** Welcome to the longest word-game !********</h2>
+  <h3>Here is your grid : </h3>
+  <%= @grid %>
+  <h2>*****************************************************</h2>
+</div>
+
+<div class="text-center">
+  <form action="/score" method="GET">
+    <label for="question">Enter the longest word you can</label>
+    <input type="text" id="question" name="query" placeholder="What's your best shot?">
+    <input type="submit" value="Go on!" class="btn btn-primary">
+  </form>
+
+</div>
